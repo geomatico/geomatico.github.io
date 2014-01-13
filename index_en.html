@@ -39,11 +39,12 @@
 <link rel="stylesheet" type="text/css" href="estilos/grid.css">
 <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
 <link rel="stylesheet" type="text/css" href="estilos/animaciones.css">
+<link rel="stylesheet" type="text/css" href="estilos/leaflet.css">
 <!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="stylesheets/ie.css" />
 	<![endif]-->
-<!-- Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<!-- Leaflet -->
+<script src="javascript/leaflet.js"></script>
 <script type="text/javascript">
 	function MM_preloadImages() { //v3.0
 		var d = document;
@@ -438,94 +439,32 @@ geoespacial ">
 		</ul>
 		<div id="map"></div>
 		<script type="text/javascript">
-			// Define your locations: HTML content for the info window, latitude, longitude
+			var map = L.map('map', {
+				crs : L.CRS.EPSG4326
+			}).setView([49.25, 2.25], 5);
+
+			L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+				maxZoom: 18,
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+			}).addTo(map);
+
+			var prefix = "imagenes/retrato_mapa_";
 			var locations = [
-					[ '<h4>Fernado González</h4>', 41.89292, 12.48252 ],
-					[ '<h4>Óscar Fonts</h4>', 41.38506, 2.17340 ],
-					[ '<h4>Micho García</h4>', 42.24060, -8.72073 ],
-					[ '<h4>Víctor Fernández</h4>', 39.46991, -0.37629 ],
-					[ '<h4>Jorge Arévalo</h4>', 40.41678, -3.70379 ] ];
+				[ '<h4>Fernando&nbsp;González</h4>', prefix + 'fernando.png', 55.06328201, 11.57512665 ],
+				[ '<h4>Óscar&nbsp;Fonts</h4>', prefix + 'oscar.png', 46.26666498, 2.25481510 ],
+				[ '<h4>Micho&nbsp;García</h4>', prefix + 'micho.png', 46.68171787, -8.72563362 ],
+				[ '<h4>Víctor&nbsp;González</h4>', prefix + 'victor.png', 43.00245665, -0.38314819 ],
+				[ '<h4>Jorge&nbsp;Arévalo</h4>', prefix + 'jorge.png', 44.25410842, -3.69724274 ] ];
 
-			// Setup the different icons and shadows
-			var iconURLPrefix = 'imagenes/';
-
-			var icons = [ iconURLPrefix + 'retrato_mapa_fernando.png',
-					iconURLPrefix + 'retrato_mapa_oscar.png',
-					iconURLPrefix + 'retrato_mapa_micho.png',
-					iconURLPrefix + 'retrato_mapa_victor.png',
-					iconURLPrefix + 'retrato_mapa_jorge.png', ]
-			var icons_length = icons.length;
-
-			var shadow = {
-				anchor : new google.maps.Point(15, 33),
-				url : iconURLPrefix + 'msmarker.shadow.png'
-			};
-
-			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom : 10,
-				center : new google.maps.LatLng(40.46367, -3.74922),
-				mapTypeId : google.maps.MapTypeId.ROADMAP,
-				styles : [ {
-					stylers : [ {
-						saturation : "-100"
-					} ]
-				} ],
-				mapTypeControl : false,
-				streetViewControl : false,
-				panControl : false,
-				scrollwheel : false,
-				zoomControlOptions : {
-					position : google.maps.ControlPosition.LEFT_BOTTOM
-				}
-			});
-
-			var infowindow = new google.maps.InfoWindow({
-				maxWidth : 160
-			});
-
-			var marker;
-			var markers = new Array();
-
-			var iconCounter = 0;
-
-			// Add the markers and infowindows to the map
 			for (var i = 0; i < locations.length; i++) {
-				marker = new google.maps.Marker({
-					position : new google.maps.LatLng(locations[i][1],
-							locations[i][2]),
-					map : map,
-					icon : icons[iconCounter],
-					shadow : shadow
-				});
-
-				markers.push(marker);
-
-				google.maps.event.addListener(marker, 'click', (function(
-						marker, i) {
-					return function() {
-						infowindow.setContent(locations[i][0]);
-						infowindow.open(map, marker);
-					}
-				})(marker, i));
-
-				iconCounter++;
-				// We only have a limited number of possible icon colors, so we may have to restart the counter
-				if (iconCounter >= icons_length) {
-					iconCounter = 0;
-				}
+				L.marker([locations[i][2], locations[i][3]], {
+					icon: new L.Icon({
+						iconUrl: locations[i][1],
+						iconAnchor: [25, 25],
+						popupAnchor: [0, -20]
+					})
+				}).addTo(map).bindPopup(locations[i][0]);
 			}
-
-			function AutoCenter() {
-				//  Create a new viewpoint bound
-				var bounds = new google.maps.LatLngBounds();
-				//  Go through each...
-				$.each(markers, function(index, marker) {
-					bounds.extend(marker.position);
-				});
-				//  Fit these bounds to the map
-				map.fitBounds(bounds);
-			}
-			AutoCenter();
 		</script>
 	</section>
 	<!-- Fin Quiénes somos -->
