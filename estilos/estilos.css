@@ -180,9 +180,15 @@ a, a:visited { font-weight: 400; text-decoration: none; }
 .parallax-bg4 { background-image: url(../imagenes/parallax-fondo4.png); }
 
 .bloque-texto { 
-	text-align: center; 
-	margin: 20px auto; 
-	max-width: 800px; 
+	text-align: justify;
+	margin: 20px auto;
+	max-width: 700px;
+}
+
+.bloque-texto li {
+	padding: 10px;
+	margin: 0 40px;
+	list-style: circle outside;
 }
 
 
