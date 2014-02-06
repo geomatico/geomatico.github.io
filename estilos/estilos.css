@@ -372,7 +372,7 @@ nav {
 .meta h4 { margin-bottom: 6px; margin-top:13px; }
 .meta h6 { margin-bottom: 6px; }
 .meta a {text-decoration:underline; color: #32423d;}
-.meta p {font-size: 1em;}
+.meta p {font-size: 1em; text-align: justify;}
 
 
 /* Tecnología
