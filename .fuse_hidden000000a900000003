@@ -262,7 +262,7 @@ geoespacial ">
 			<!-- Texto -->
 			<div class="bloque_texto grid-todo">
 				<h2 class="tecnologia">colaboradores</h2>
-				<p class="bloque-texto" style="text-align:center;">Gente con la que nos gusta formar equipo.</p>
+				<p class="bloque-texto">TODO.</p>
 			</div>
 			<!-- Iconos -->
 			<ul class="iconos clearfix">
@@ -270,46 +270,48 @@ geoespacial ">
 				<li class="overview animated fade">
 					<!-- Tooltip Descripción -->
 					<div class="tooltip">
-						<div class="descripcion_tecnologia"><a href="http://cartodb.com/" target="_blank"><img class="center" src="imagenes/partners/cartodb.png" alt="Logo CartoDB"></a></div>
+						<div class="descripcion_tecnologia">52N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla ipsum, consectetur a consectetur id, vehicula at tortor.</div>
 					</div> <span class="flecha_abajo"></span> <!-- Pin -->
 					<div class="icon"></div> <!-- Nombre tecnología -->
-					<h5>CartoDB</h5>
+					<h5>52N</h5>
 				</li>
 				<!-- Tecnología -->
 				<li class="overview animated fade">
 					<!-- Tooltip Descripción -->
 					<div class="tooltip">
-						<div class="descripcion_tecnologia"><a href="http://csgis.de/" target="_blank"><img class="center" src="imagenes/partners/csgis.png" alt="Logo CSGIS"></a></div>
+						<div class="descripcion_tecnologia">GGL2 Cras ut hendrerit odio. Sed mauris lacus, tristique et rhoncus nec, adipiscing id lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 					</div> <span class="flecha_abajo"></span> <!-- Pin -->
 					<div class="icon"></div> <!-- Nombre tecnología -->
-					<h5>CSGIS</h5>
+					<h5>GGL2</h5>
 				</li>
 				<!-- Tecnología -->
 				<li class="overview animated fade">
 					<!-- Tooltip Descripción -->
 					<div class="tooltip">
-						<div class="descripcion_tecnologia"><a href="http://icarto.es/" target="_blank"><img class="center" src="imagenes/partners/icarto.png" alt="Logo iCarto"></a></div>
+						<div class="descripcion_tecnologia">GVSIG Vivamus orci dui, sagittis quis libero vitae, posuere vulputate justo. Donec turpis justo, dignissim non interdum non, interdum ut felis. Donec
+							eleifend dolor vitae leo pharetra pulvinar.</div>
 					</div> <span class="flecha_abajo"></span> <!-- Pin -->
 					<div class="icon"></div> <!-- Nombre tecnología -->
-					<h5>iCarto</h5>
+					<h5>GVSIG</h5>
 				</li>
 				<!-- Tecnología -->
 				<li class="overview animated fade">
 					<!-- Tooltip Descripción -->
 					<div class="tooltip">
-						<div class="descripcion_tecnologia"><a href="http://www.innovatig.com/" target="_blank"><img class="center" src="imagenes/partners/innovatig.png" alt="Logo innovatig"></a></div>
+						<div class="descripcion_tecnologia">GEOSERVER Sed at imperdiet ligula. Suspendisse placerat diam ante, ut vestibulum libero viverra a. Duis non est nulla. Etiam semper sem magna, eu
+							tincidunt sem porta ac.</div>
 					</div> <span class="flecha_abajo"></span> <!-- Pin -->
 					<div class="icon"></div> <!-- Nombre tecnología -->
-					<h5>innovatig</h5>
+					<h5>GEOSERVER</h5>
 				</li>
 				<!-- Tecnología -->
 				<li class="overview animated fade">
 					<!-- Tooltip Descripción -->
 					<div class="tooltip">
-						<div class="descripcion_tecnologia"><a href="http://www.sigte.udg.edu/" target="_blank"><img class="center" src="imagenes/partners/sigte.png" alt="Logo innovatig"></a></div>
+						<div class="descripcion_tecnologia">GEOTOOLS In vel est blandit, porttitor sapien a, tristique justo. In commodo metus eget tristique commodo.</div>
 					</div> <span class="flecha_abajo"></span> <!-- Pin -->
 					<div class="icon"></div> <!-- Nombre tecnología -->
-					<h5>SIGTE</h5>
+					<h5>GEOTOOLS</h5>
 				</li>
 			</ul>
 		</div>
@@ -441,8 +443,7 @@ geoespacial ">
 		<div id="map"></div>
 		<script type="text/javascript">
 			var map = L.map('map', {
-				crs: L.CRS.EPSG4326,
-				scrollWheelZoom: false
+				crs : L.CRS.EPSG4326
 			}).setView([49.25, 2.25], 5);
 
 			L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
@@ -476,7 +477,7 @@ geoespacial ">
 			<!-- Texto -->
 			<div class="bloque_texto grid-todo">
 				<h2 class="contacto">contacto</h2>
-				<p class="bloque-texto" style="text-align:center;">
+				<p class="bloque-texto">
 					contacta con nostros y cuéntanos tu proyecto: <a href="mailto:info@geomati.co">info@geomati.co</a>
 				</p>
 			</div>
@@ -495,7 +496,7 @@ geoespacial ">
 	<!-- Pie  -->
 	<div class="clearfix parallax-bg3">
 		<div class="pie contenedor">
-			<div class="copyright grid-todo">CC-by-sa 2014 geomati.co</div>
+			<div class="copyright grid-todo">© 2013-2014 Geomati.co</div>
 		</div>
 	</div>
 	<!-- Javascript -->
