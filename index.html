@@ -426,35 +426,6 @@
 			</li>
 		</ul>
 		<div id="map"></div>
-		<script type="text/javascript">
-			var map = L.map('map', {
-				crs: L.CRS.EPSG4326,
-				scrollWheelZoom: false
-			}).setView([49.25, 2.25], 5);
-
-			L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-				maxZoom: 18,
-				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
-			}).addTo(map);
-
-			var prefix = "imagenes/retrato_mapa_";
-			var locations = [
-				[ '<h4>Fernando&nbsp;González</h4>', prefix + 'fernando.png', 55.06328201, 11.57512665 ],
-				[ '<h4>Óscar&nbsp;Fonts</h4>', prefix + 'oscar.png', 46.26666498, 2.25481510 ],
-				[ '<h4>Micho&nbsp;García</h4>', prefix + 'micho.png', 46.68171787, -8.72563362 ],
-				[ '<h4>Víctor&nbsp;González</h4>', prefix + 'victor.png', 43.00245665, -0.38314819 ],
-				[ '<h4>Jorge&nbsp;Arévalo</h4>', prefix + 'jorge.png', 44.25410842, -3.69724274 ] ];
-
-			for (var i = 0; i < locations.length; i++) {
-				L.marker([locations[i][2], locations[i][3]], {
-					icon: new L.Icon({
-						iconUrl: locations[i][1],
-						iconAnchor: [25, 25],
-						popupAnchor: [0, -20]
-					})
-				}).addTo(map).bindPopup(locations[i][0]);
-			}
-		</script>
 	</section>
 	<!-- Fin Quiénes somos -->
 	<!-- Incio Contacto -->
@@ -496,5 +467,6 @@
 	<script src="javascript/jquery.scrollto.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascript/jquery.appear.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascript/main.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/mapa.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
