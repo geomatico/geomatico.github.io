@@ -39,7 +39,7 @@ for(var i = 0; i < marker_data.length; i++) {
   var member = marker_data[i];
   L.marker(member.location, {
     icon: L.icon({
-      iconUrl: "imagenes/retrato_mapa_" + member.img + ".png",
+      iconUrl: "/imagenes/retrato_mapa_" + member.img + ".png",
       iconAnchor: [25, 25],
       popupAnchor: [0, -20]
     })
