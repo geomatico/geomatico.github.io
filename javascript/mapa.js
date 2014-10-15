@@ -2,7 +2,7 @@
 var map = L.map('map', {
   crs: L.CRS.EPSG4326,
   scrollWheelZoom: false
-}).setView([43.5, -3.5], 6/*[49.25, 2.25], 5*/);
+}).setView(/*[43.5, -3.5], 6*/[49.25, 2.25], 5);
 
 // The base layer
 L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
@@ -13,11 +13,11 @@ L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // The marker data
-var marker_data = [/*{
+var marker_data = [{
   name: "Fernando González",
   img: "fernando",
   location: [55.06328201, 11.57512665]
-},*/{
+},{
   name: "Oscar Fonts",
   img: "oscar",
   location: [46.26666498, 2.25481510]
@@ -29,11 +29,11 @@ var marker_data = [/*{
   name: "Víctor González",
   img: "victor",
   location: [43.00245665, -0.38314819]
-},{
+}/*,{
   name: "Jorge Arévalo",
   img: "jorge",
   location: [44.25410842, -3.69724274]
-}];
+}*/];
 
 for(var i = 0; i < marker_data.length; i++) {
   var member = marker_data[i];
