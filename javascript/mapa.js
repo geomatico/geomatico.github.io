@@ -19,7 +19,7 @@
     var marker_data = [{
         name: "Fernando González",
         img: "fernando",
-        location: [55.06328201, 11.57512665]
+        location: [52.2048, 6.1431]
     },{
         name: "Oscar Fonts",
         img: "oscar",
