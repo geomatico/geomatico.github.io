@@ -17,7 +17,7 @@
 /* General
 -------------------------------------------------------------- */
 
-body { 
+body {
 	background: #fff;
 	color: #32423d;
 	font: normal 15px "Bree-serif", arial, sans-serif;
@@ -32,7 +32,7 @@ section { overflow: hidden; }
 /* Fuente y textos
 -------------------------------------------------------------- */
 
-p { 
+p {
 	color: #32423d;
 	font-size: 16px;
 	line-height: 1.4em;
@@ -72,7 +72,7 @@ h3 {
 
 h4 {
 	font-size: 1.6em;
-	font-weight: 600;	
+	font-weight: 600;
 }
 
 h5 {
@@ -137,8 +137,8 @@ a, a:visited { font-weight: 400; text-decoration: none; }
 	padding-bottom: 10px;
 	font-size: 1em;
 	font-weight: 600;
-	background: rgba(0, 0, 0, .3); filter: alpha(opacity=80); 
-	
+	background: rgba(0, 0, 0, .3); filter: alpha(opacity=80);
+
 	border-radius: 3px;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
@@ -179,14 +179,14 @@ a, a:visited { font-weight: 400; text-decoration: none; }
 .parallax-bg3 { background-image: url(../imagenes/parallax-fondo3.png); }
 .parallax-bg4 { background-image: url(../imagenes/parallax-fondo4.png); }
 
-.bloque-texto { 
+.bloque-texto {
 	text-align: justify;
 	margin: 20px auto;
 	max-width: 700px;
 }
 
 .miembro_equipo p {
-	text-align: justify;	
+	text-align: justify;
 }
 
 .bloque-texto li {
@@ -209,7 +209,7 @@ nav {
 	z-index: 5000;
 }
 
-.logo { 
+.logo {
 	width: 250px;
 	margin-left: 2%;
 	float: left;
@@ -364,14 +364,14 @@ nav {
 	width: 820px;
 
 }
-.info_proyecto { 
-	width: 100%; 
+.info_proyecto {
+	width: 100%;
 }
-.meta { 
-	bottom: 0; 
-	margin-bottom: 25px; 
-	width: 100%; 
-	text-align: left; 
+.meta {
+	bottom: 0;
+	margin-bottom: 25px;
+	width: 100%;
+	text-align: left;
 }
 .meta h4 { margin-bottom: 6px; margin-top:13px; }
 .meta h6 { margin-bottom: 6px; }
@@ -438,11 +438,11 @@ nav {
 	top: auto;
 	bottom: 100%;
 	margin-bottom: 22px;
-	width: 0; 
+	width: 0;
 	height: 0;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
-	border-top: 8px solid rgba(255, 255, 255, 1); 
+	border-top: 8px solid rgba(255, 255, 255, 1);
 }
 
 .visible { display: block; }
@@ -576,7 +576,7 @@ nav {
 	.navegacion { display: none; }
 
 	.parallax { background-size: cover; background-attachment: scroll; background-position: top center!important; }
-	.content { padding-top: 50px; } 
+	.content { padding-top: 50px; }
 	.iconos .overview { width: 33.3333333333%; margin-bottom: 30px; }
 	.icon { cursor: pointer; }
 	.lista_proyectos li { width: 50%; }
@@ -641,7 +641,7 @@ nav {
 }
 
 /* Dispositivos Retina */
-@media 
+@media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (   -moz-min-device-pixel-ratio: 2),
@@ -649,7 +649,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-  
+
 	.icon { background: url(../imagenes/icono_pin@2x.png) no-repeat top; background-size: 64px 148px; }
 	.icono_social.peque.twitter { background: url(../imagenes/icono_twitter@2x.png) no-repeat center center; background-size: 30px 30px;}
    .icono_social.peque.linkedin { background: url(../imagenes//icono_linkedin@2x.png) no-repeat center center; background-size: 30px 30px;}
@@ -670,4 +670,9 @@ img.center {
 }
 .marker-cluster-small div {
     background-color: rgba(226, 252, 164, 0.6);
+}
+
+/* Cookie Bar */
+#cookie-bar p {
+	color: #ffffff;
 }
