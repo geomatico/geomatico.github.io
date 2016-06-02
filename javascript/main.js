@@ -1,13 +1,17 @@
 /* Inicialización
 -------------------------------------------------------------- */
+"use strict";
+
 function initialize() {
-	
 
-	"use strict";
+	jQuery.cookieBar({
+		element: "nav",
+		fixed: true,
+		acceptOnScroll: 200
+	});
 
-	//IE9 
+	//IE9
 	if (jQuery.browser.msie && jQuery.browser.version == 9) {
-
 		jQuery('html').addClass('ie9');
 	}
 
@@ -56,7 +60,7 @@ function initialize() {
 	    jQuery(document).on("ready", portadaInit);
 	})();
 
-	
+
 	//TOOLTIP DE TECNOLOGÍA
 	(function() {
 		function tooltipInit(){
@@ -110,15 +114,14 @@ function initialize() {
 		}
 
 		jQuery(window).on("resize", tooltipInit);
-	    jQuery(document).on("ready", tooltipInit);
-
+	  jQuery(document).on("ready", tooltipInit);
 	})();
 
 	//ANIMACIONES
-	
-	
+
+
 	jQuery('.animated').appear({force_process: true})
-	
+
 	jQuery(document.body).on('appear', '.fade', function() {
 		jQuery(this).each(function(){ jQuery(this).addClass('ae-animation-fade') });
 	});
@@ -142,15 +145,11 @@ function initialize() {
 		jQuery(this).removeClass('timer');
 	});
 
-	
-	//EFECTOS PARALLAX 
+	//EFECTOS PARALLAX
 	jQuery('.parallax-bg1').parallax("50%", 0.5);
 	jQuery('.parallax-bg2').parallax("50%", 0.5);
 	jQuery('.parallax-bg3').parallax("50%", 0.4);
 	jQuery('.parallax-bg4').parallax("50%", 0.4);
-
-
-			
 };
 
 
@@ -158,7 +157,5 @@ function initialize() {
 /* LANZADERA
 -------------------------------------------------------------- */
 jQuery(document).ready(function(){
-
 	initialize();
-
 });
