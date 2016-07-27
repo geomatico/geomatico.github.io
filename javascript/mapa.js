@@ -8,11 +8,16 @@
     }).setView(/*[43.5, -3.5], 6*/[49.25, 2.25], 5);
 
     // The base layer
-    L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
-        subdomains: '1234',
-        minZoom: 2,
-        maxZoom: 17,
-        attribution: 'Map data © <a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">'
+    L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
+        subdomains: 'abcd',
+        minZoom: 1,
+        maxZoom: 18,
+        attribution: [
+                'Map tiles by <a href="http://stamen.com/">Stamen Design</a>, ',
+                'under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ',
+                'Data by <a href="http://openstreetmap.org/">OpenStreetMap</a>, ',
+                'under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+            ].join("")
     }).addTo(map);
 
     // The marker data
