@@ -23,6 +23,7 @@
     "@babel/preset-react": "^7.12.1",
     "@material-ui/icons": "^4.11.2",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.0.0",
     "dotenv-webpack": "^6.0.0",

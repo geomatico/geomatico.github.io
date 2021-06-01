@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const DotenvWebpackPlugin = require('dotenv-webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = (env) => ({
@@ -15,10 +16,7 @@ module.exports = (env) => ({
   resolve: {
     alias: {
       react: path.resolve('./node_modules/react'),
-      '@material-ui/core': path.resolve('./node_modules/@material-ui/core'),
-      '@material-ui/icons': path.resolve('./node_modules/@material-ui/icons'),
-      '@material-ui/lab': path.resolve('./node_modules/@material-ui/lab'),
-      'react-map-gl': path.resolve('./node_modules/react-map-gl')
+      '@material-ui/core': path.resolve('./node_modules/@material-ui/core')
     }
   },
   module: {
@@ -64,6 +62,7 @@ module.exports = (env) => ({
     }),
     new DotenvWebpackPlugin({
       safe: true
-    })
+    }),
+    new CleanWebpackPlugin(),
   ],
 });
