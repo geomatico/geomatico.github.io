@@ -42,11 +42,6 @@ const ProjectList = ({projects}) => {
           </a>
           <GridListTileBar
             title={project.title}
-            actionIcon={
-              <IconButton aria-label={`info about ${project.title}`} className={classes.icon}>
-                <InfoIcon href={project.url}/>
-              </IconButton>
-            }
           />
         </GridListTile>
       ))}
