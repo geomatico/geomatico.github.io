@@ -36,7 +36,10 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline/>
       <ResponsiveHeader title='labs@geomatico' logo={<GeomaticoIcon />}/>
-      <ProjectList projects={CONFIG.projects} />
+      <div>
+        <div style={{...theme.mixins.toolbar}} />
+        <ProjectList projects={CONFIG.projects} />
+      </div>
     </ThemeProvider>
   );
 };
