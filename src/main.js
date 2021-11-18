@@ -1,18 +1,20 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import {blue} from '@material-ui/core/colors';
+import createTheme from '@mui/material/styles/createTheme';
+import ThemeProvider from '@mui/material/styles/ThemeProvider';
+import CssBaseline from '@mui/material/CssBaseline';
+import blue from '@mui/material/colors/blue';
 
-import {ResponsiveHeader, LogoHorizontalNegativo} from '@geomatico/geocomponents';
+import ResponsiveHeader from '@geomatico/geocomponents/dist/ResponsiveHeader';
+import LogoHorizontalNegativo from '@geomatico/geocomponents/dist/LogoHorizontalNegativo';
 
 import {CONFIG} from './config';
 import ProjectList from './components/ProjectList';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
-    type: 'light',
+    mode: 'light',
     primary: {
       main: '#973572',
       contrastText: '#fff',
@@ -23,28 +25,20 @@ const theme = createMuiTheme({
   }
 });
 
-const GeomaticoIcon = () => <>
+const GeomaticoIcon = () =>
   <a href='https://geomatico.es' target='_blank' rel='noreferrer'>
     <LogoHorizontalNegativo />
-  </a>
-</>;
+  </a>;
 
-const App = () => {
-
-
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline/>
-      <ResponsiveHeader title='labs@geomatico' logo={<GeomaticoIcon />}/>
-      <div>
-        <div style={{...theme.mixins.toolbar}} />
-        <ProjectList projects={CONFIG.projects} />
-      </div>
-    </ThemeProvider>
-  );
-};
+const App = () =>
+  <ThemeProvider theme={theme}>
+    <CssBaseline/>
+    <ResponsiveHeader title='labs@geomatico' logo={<GeomaticoIcon/>}/>
+    <div>
+      <div style={{...theme.mixins.toolbar}} />
+      <ProjectList projects={CONFIG.projects} />
+    </div>
+  </ThemeProvider>;
 
 const target = document.getElementById('app');
 if (target) ReactDOM.render(<App />, target);
-
-export default App;
