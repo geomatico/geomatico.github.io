@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ImageList from '@mui/material/ImageList';
-import makeStyles from '@mui/styles/makeStyles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Box from '@mui/material/Box';
 
-const useStyles = makeStyles(() => ({
-  imageContent: {
+const ProjectList = ({projects}) => {
+  const widescreen = useMediaQuery('(min-width: 900px)');
+  const imageContent = {
     width: '100%',
     height: '100%',
     overflow: 'hidden',
@@ -20,32 +21,22 @@ const useStyles = makeStyles(() => ({
         transformOrigin: '50% 50%',
       }
     }
-  },
-  image: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    transition: 'transform .4s',
-  },
-}));
-
-const ProjectList = ({projects}) => {
-  const widescreen = useMediaQuery('(min-width: 900px)');
-  const classes = useStyles({widescreen});
+  };
 
   return <ImageList cols={widescreen? 3 : 2} gap={widescreen? 20 : 0} sx={{margin: {xs: 0, md: 4}}}>
     {projects.map((project) => (
       <ImageListItem key={project.img}>
-        <div className={classes.imageContent}>
+        <Box sx={imageContent}>
           <a href={project.url}>
             <img
               src={project.img}
               alt={project.title}
-              className={classes.image}
-              loading="lazy"
+              width='100%'
+              height='100%'
+              style={{objectFit: 'cover', transition: 'transform .4s'}}
             />
           </a>
-        </div>
+        </Box>
         <ImageListItemBar title={project.title} />
       </ImageListItem>
     ))}
