@@ -6,8 +6,8 @@ import ThemeProvider from '@mui/material/styles/ThemeProvider';
 import CssBaseline from '@mui/material/CssBaseline';
 import blue from '@mui/material/colors/blue';
 
-import ResponsiveHeader from '@geomatico/geocomponents/dist/ResponsiveHeader';
-import LogoHorizontalNegativo from '@geomatico/geocomponents/dist/LogoHorizontalNegativo';
+import ResponsiveHeader from '@geomatico/geocomponents/ResponsiveHeader';
+import LogoHorizontalNegativo from '@geomatico/geocomponents/LogoHorizontalNegativo';
 
 import {CONFIG} from './config';
 import ProjectList from './components/ProjectList';

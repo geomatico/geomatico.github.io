@@ -23,7 +23,7 @@
     "@babel/preset-react": "^7.12.1",
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
-    "@geomatico/geocomponents": "file:../geocomponents/geomatico-geocomponents-0.0.24.tgz",
+    "@geomatico/geocomponents": "^1.0.0",
     "@material-ui/icons": "^4.11.2",
     "@mui/icons-material": "^5.1.1",
     "@mui/material": "^5.1.1",
