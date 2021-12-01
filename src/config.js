@@ -24,6 +24,16 @@ export const CONFIG = {
       img: 'img/otp.png',
       title: 'Otp.js',
       url: 'https://labs.geomatico.es/otp-react-redux',
-    }
+    },
+    {
+      img: 'img/aguacates.png',
+      title: 'Go Aguacate',
+      url: 'https://goaguacatespain.com/mapa/',
+    },
+    {
+      img: 'img/taxomap.png',
+      title: 'Taxo&Map',
+      url: 'https://labs.geomatico.es/taxomap-vt/',
+    },
   ]
 };
