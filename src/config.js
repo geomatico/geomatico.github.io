@@ -35,5 +35,10 @@ export const CONFIG = {
       title: 'Taxo&Map',
       url: 'https://labs.geomatico.es/taxomap-vt/',
     },
+    {
+      img: 'img/vias-romanas.jpeg',
+      title: 'Vías Romanas',
+      url: 'https://www.viasromanas.net/',
+    }
   ]
 };
