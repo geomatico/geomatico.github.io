@@ -11,9 +11,9 @@ export const CONFIG = {
       url: 'https://labs.geomatico.es/mapa-catastro-3d',
     },
     {
-      img: 'img/pirineos-3d.png',
+      img: 'img/atesmaps.png',
       title: 'Pirineos 3D',
-      url: 'https://labs.geomatico.es/pirineos-3d',
+      url: 'https://labs.geomatico.es/atesmaps',
     },
     {
       img: 'img/satagro.png',
@@ -27,7 +27,7 @@ export const CONFIG = {
     },
     {
       img: 'img/aguacates.png',
-      title: 'Go Aguacate',
+      title: 'Mapa del cultivo del aguacate',
       url: 'https://goaguacatespain.com/mapa/',
     },
     {
@@ -39,6 +39,16 @@ export const CONFIG = {
       img: 'img/vias-romanas.jpeg',
       title: 'Vías Romanas',
       url: 'https://www.viasromanas.net/',
+    },
+    {
+      img: 'img/energeticas.png',
+      title: 'Comunidades energéticas',
+      url: 'https://labs.geomatico.es/distancia-comunitats-energetiques/#/es',
+    },
+    {
+      img: 'img/carimed.png',
+      title: 'Calidad ecológica de los ríos de Barcelona',
+      url: 'https://www.ub.edu/barcelonarius/visor22/#/indicator/ibmwp_rang/2021/0',
     }
   ]
 };
