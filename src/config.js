@@ -22,7 +22,7 @@ export const CONFIG = {
     },
     {
       img: 'img/otp.png',
-      title: 'Open Trip Planner',
+      title: 'Movilidad - Routing',
       url: 'https://labs.geomatico.es/otp-react-redux',
     },
     {
