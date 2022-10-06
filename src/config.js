@@ -22,7 +22,7 @@ export const CONFIG = {
     },
     {
       img: 'img/otp.png',
-      title: 'Otp.js',
+      title: 'Open Trip Planner',
       url: 'https://labs.geomatico.es/otp-react-redux',
     },
     {
@@ -32,13 +32,18 @@ export const CONFIG = {
     },
     {
       img: 'img/taxomap.png',
-      title: 'Taxo&Map',
+      title: 'Taxo&Map - Museo de Ciencias Naturales de Cataluña',
       url: 'https://labs.geomatico.es/taxomap-vt/',
     },
     {
       img: 'img/vias-romanas.jpeg',
       title: 'Vías Romanas',
       url: 'https://www.viasromanas.net/',
+    },
+    {
+      img: 'img/irriter.png',
+      title: 'IRRITER - Sistema de Información para el riego de precisión en el Baix Ter',
+      url: 'https://irriter.cat/',
     }
   ]
 };
