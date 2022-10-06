@@ -22,7 +22,7 @@ export const CONFIG = {
     },
     {
       img: 'img/otp.png',
-      title: 'Otp.js',
+      title: 'Movilidad Routing',
       url: 'https://labs.geomatico.es/otp-react-redux',
     },
     {
@@ -49,6 +49,11 @@ export const CONFIG = {
       img: 'img/carimed.png',
       title: 'Calidad ecológica de los ríos de Barcelona',
       url: 'https://www.ub.edu/barcelonarius/visor22/#/indicator/ibmwp_rang/2021/0',
+    },
+    {
+      img: 'img/irriter.png',
+      title: 'IRRITER - Sistema de Información para el riego de precisión en el Baix Ter',
+      url: 'https://irriter.cat/',
     }
   ]
 };

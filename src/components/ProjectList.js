@@ -23,7 +23,7 @@ const ProjectList = ({projects}) => {
     }
   };
 
-  return <ImageList cols={widescreen? 4 : 2} gap={widescreen? 10 : 0} sx={{margin: {xs: 0, md: 4}}}>
+  return <ImageList cols={widescreen? 4 : 2} gap={widescreen? 10 : 6} sx={{margin: {xs: 1, md: 2}}}>
     {projects.map((project) => (
       <ImageListItem key={project.img}>
         <Box sx={imageContent}>
