@@ -7,7 +7,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import blue from '@mui/material/colors/blue';
 
 import ResponsiveHeader from '@geomatico/geocomponents/ResponsiveHeader';
-import LogoHorizontalNegativo from '@geomatico/geocomponents/LogoHorizontalNegativo';
+import LogoHorizontalNegativoLabs from './components/LogoHorizontalNegativoLabs';
 
 import {CONFIG} from './config';
 import ProjectList from './components/ProjectList';
@@ -27,13 +27,13 @@ const theme = createTheme({
 
 const GeomaticoIcon = () =>
   <a href='https://geomatico.es' target='_blank' rel='noreferrer'>
-    <LogoHorizontalNegativo />
-  </a>;
+    <LogoHorizontalNegativoLabs />
+  </a>
 
 const App = () =>
   <ThemeProvider theme={theme}>
     <CssBaseline/>
-    <ResponsiveHeader title='labs@geomatico' logo={<GeomaticoIcon/>}/>
+    <ResponsiveHeader logo={<GeomaticoIcon/>}/>
     <div>
       <div style={{...theme.mixins.toolbar}} />
       <ProjectList projects={CONFIG.projects} />
