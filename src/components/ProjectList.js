@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 
 import ImageListItem from '@mui/material/ImageListItem';
@@ -8,6 +8,21 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 
 const ProjectList = ({projects}) => {
+
+  const [rowHeight, setRowHeight] = useState(200); // valor por defecto
+
+  useEffect(() => {
+    const calculateHeight = () => {
+      const vh = window.innerHeight;
+      const result = (vh - 64 - 45) / 3;
+      setRowHeight(Math.round(result));
+    };
+
+    calculateHeight(); // inicial
+    window.addEventListener('resize', calculateHeight);
+    return () => window.removeEventListener('resize', calculateHeight);
+  }, []);
+
   const widescreen = useMediaQuery('(min-width: 900px)');
   const imageContent = {
     width: '100%',
@@ -23,7 +38,7 @@ const ProjectList = ({projects}) => {
     }
   };
 
-  return <ImageList cols={widescreen? 4 : 2} gap={widescreen? 10 : 6} sx={{margin: {xs: 1, md: 2}}}>
+  return <ImageList cols={widescreen? 4 : 2} gap={widescreen? 10 : 6} sx={{margin: {xs: 1, md: 2}}} rowHeight={widescreen? rowHeight : 200}>
     {projects.map((project) => (
       <ImageListItem key={project.img}>
         <Box sx={imageContent}>

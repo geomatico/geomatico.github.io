@@ -28,7 +28,7 @@ const theme = createTheme({
 const GeomaticoIcon = () =>
   <a href='https://geomatico.es' target='_blank' rel='noreferrer'>
     <LogoHorizontalNegativoLabs />
-  </a>
+  </a>;
 
 const App = () =>
   <ThemeProvider theme={theme}>
