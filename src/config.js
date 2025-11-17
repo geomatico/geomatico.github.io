@@ -38,7 +38,7 @@ export const CONFIG = {
     {
       img: 'img/taxomap.png',
       title: 'Taxo&Map',
-      url: 'https://labs.geomatico.es/taxomap4/',
+      url: 'https://taxomap.geomatico.es/',
     },
     {
       img: 'img/vias-romanas.jpeg',
