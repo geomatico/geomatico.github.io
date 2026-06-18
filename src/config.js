@@ -51,6 +51,16 @@ export const CONFIG = {
       url: 'https://www.ub.edu/barcelonarius/visor22/#/indicator/ibmwp_rang/2021/0',
     },
     {
+      img: 'img/firepoctep.png',
+      title: 'Firepoctep',
+      url: 'https://labs.geomatico.es/firepoctep/#/es/map',
+    },
+    {
+      img: 'img/IDE-Cetemas.png',
+      title: 'IDE Cetemas',
+      url: 'https://www.cetemas.es/ide/',
+    },
+    {
       img: 'img/energeticas.png',
       title: 'Comunidades energéticas',
       url: 'https://labs.geomatico.es/distancia-comunitats-energetiques/#/es',
@@ -60,6 +70,5 @@ export const CONFIG = {
       title: 'Mapa del cultivo del aguacate',
       url: 'https://goaguacatespain.com/mapa/',
     },
-
   ]
 };

@@ -9,6 +9,8 @@ import Box from '@mui/material/Box';
 
 const ProjectList = ({projects}) => {
 
+  const HEIGHT = 25;
+
   const [rowHeight, setRowHeight] = useState(200); // valor por defecto
 
   useEffect(() => {
@@ -38,7 +40,9 @@ const ProjectList = ({projects}) => {
     }
   };
 
-  return <ImageList cols={widescreen? 4 : 2} gap={widescreen? 10 : 6} sx={{margin: {xs: 1, md: 2}}} rowHeight={widescreen? rowHeight : 200}>
+  const COLUMNS = widescreen? 3 : 2;
+
+  return <ImageList cols={COLUMNS} gap={widescreen? 10 : 6} sx={{margin: {xs: 1, md: 2}}} rowHeight={widescreen? rowHeight : 200}>
     {projects.map((project) => (
       <ImageListItem key={project.img}>
         <Box sx={imageContent}>
