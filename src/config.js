@@ -27,7 +27,7 @@ export const CONFIG = {
     },
     {
       img: 'img/satagro.png',
-      title: 'SatAgro',
+      title: 'SATAGRO - Agricultura de precisión',
       url: 'https://app.satagro.pl/es/login/#dashboard',
     },
     {
@@ -37,27 +37,27 @@ export const CONFIG = {
     },
     {
       img: 'img/taxomap.png',
-      title: 'Taxo&Map',
+      title: 'TAXOMAP - Mapa biodiversidad museo barcelona',
       url: 'https://taxomap.geomatico.es/',
     },
     {
       img: 'img/vias-romanas.jpeg',
-      title: 'Vías Romanas',
+      title: 'Indentifición y descripción de la red viaria romana en Castilla y León',
       url: 'https://www.viasromanas.net/',
     },
     {
       img: 'img/carimed.png',
-      title: 'Calidad ecológica de los ríos de Barcelona',
+      title: 'CARIMED - Calidad ecológica de los ríos de Barcelona',
       url: 'https://www.ub.edu/barcelonarius/visor22/#/indicator/ibmwp_rang/2021/0',
     },
     {
       img: 'img/firepoctep.png',
-      title: 'Firepoctep',
+      title: 'FIREPOCTEP - Mapa de cortafuegos productivos',
       url: 'https://labs.geomatico.es/firepoctep/#/es/map',
     },
     {
       img: 'img/IDE-Cetemas.png',
-      title: 'IDE Cetemas',
+      title: 'IDE de empresa forestal',
       url: 'https://www.cetemas.es/ide/',
     },
     {
