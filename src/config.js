@@ -37,12 +37,12 @@ export const CONFIG = {
     },
     {
       img: 'img/taxomap.png',
-      title: 'TAXOMAP - Mapa biodiversidad museo barcelona',
+      title: 'TAXOMAP - Mapa biodiversidad MCNB',
       url: 'https://taxomap.geomatico.es/',
     },
     {
       img: 'img/vias-romanas.jpeg',
-      title: 'Indentifición y descripción de la red viaria romana en Castilla y León',
+      title: 'Vías romanas',
       url: 'https://www.viasromanas.net/',
     },
     {
@@ -57,7 +57,7 @@ export const CONFIG = {
     },
     {
       img: 'img/IDE-Cetemas.png',
-      title: 'IDE de empresa forestal',
+      title: 'IDE Centro Tecnológico Forestal',
       url: 'https://www.cetemas.es/ide/',
     },
     {
